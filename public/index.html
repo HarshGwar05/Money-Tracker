@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Money Tracker</title>
+</head>
+<body>
+    <form id="money-form">
+        <h1>Money Tracker</h1>
+        <div class="input-section">
+            <label for="category_select">Category: </label>
+            <select name="category" id="category_select"> <!-- Changed 'category_select' to 'category' to match JavaScript -->
+                <option value="Expense">Expense</option>
+                <option value="Income">Income</option>
+            </select>
+
+            <label for="amount_input">Amount : </label>
+            <input type="number" id="amount_input" name="amount"> <!-- Changed 'amount_input' to 'amount' to match JavaScript -->
+
+            <label for="info">Info : </label>
+            <input type="text" id="info" name="info"> <!-- Matches with JavaScript -->
+
+            <label for="date_input">Date : </label>
+            <input type="date" id="date_input" name="date"> <!-- Changed 'date_input' to 'date' to match JavaScript -->
+
+            <button id="add_btn" type="button">Add</button> <!-- Prevent form submission -->
+        </div>
+    </form>
+
+    <div class="expenses-list">
+        <h2>Income and Expense List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Info</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="expense-table-body"></tbody>
+            <tfoot>
+                <tr>
+                    <td>Total: </td>
+                    <td id="total-amount"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

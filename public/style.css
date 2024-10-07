@@ -1,0 +1,103 @@
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark text color */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0a0101; /* Darker text for headings */
+    font-family: 'Montserrat', sans-serif; /* Stylish font for headings */
+    font-weight: 700; /* Bold headings */
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(223, 218, 218); /* Light background for input section */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px; /* Spacing between input sections */
+}
+
+.input-section label {
+    font-weight: bold;
+    margin-right: 5px; /* Reduced margin */
+    color: #333; /* Dark text for labels */
+}
+
+.input-section input {
+    padding: 8px; /* Adjusted padding */
+    margin-right: 5px; /* Reduced margin */
+    border: 1px solid #aaa; /* Light grey border */
+    border-radius: 4px;
+    background-color: #fff; /* White input background */
+    color: black; /* Dark text in inputs */
+}
+
+.input-section button {
+    padding: 8px 12px; /* Adjusted padding */
+    background-color: #4caf50; /* Green button */
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.input-section button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.expenses-list {
+    margin: 20px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table */
+    background-color: #fff; /* White table background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent border radius from showing */
+    color: #333;
+}
+
+th, td {
+    border: 1px solid #020202; /* Light border */
+    padding: 12px; /* Increased padding */
+    text-align: left;
+}
+
+td {
+    background-color: #e0e0e0; /* Light grey background for table data */
+    color: black; /* Dark text color */
+}
+
+th {
+    background-color: #f0f0f0; /* Light header background */
+    color: #333; /* Dark text for header */
+}
+
+tfoot td {
+    font-weight: bold;
+    color: black;
+    background-color: #f5f5f5; /* Light footer background */
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336; /* Red button for delete */
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.delete-btn:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
